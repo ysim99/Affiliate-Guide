@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 h1{
     color: white;
@@ -98,7 +102,16 @@ p{
     padding: 60px 100px;
     height: auto;
     margin-bottom: 60px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1.2s ease-out;
 }
+
+.afg-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .afg-title{
     padding: 5px 12px;
@@ -120,17 +133,46 @@ p{
 }
 
 /*HOW IT WORKS*/
-.afg-icon-container {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
+.afg-carousel {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: fit-content;
+    transition: transform 0.5s ease-in-out;
 }
 
-.afg-icon-title{
-    text-align: center;
-    height: 50px;
+.afg-slide {
+    width: 445px;
+    height: 400px;
+    border-radius: 30px;
+    transition: transform 0.5s ease-in-out;
+    background-color: #f4f4f4;
 }
+
+.afg-carousel-button{
+    position: absolute;
+    right: 150px;
+    bottom: -30px;
+}
+
+.afg-carousel-button button {
+    font-size: 24px;
+    width: 50px;
+    margin-left: 15px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e3e3e3;
+    color: #747474;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.afg-carousel-button button:hover {
+    color: white;
+    background-color: #747474;
+}
+
 
 /*Faq*/
 .afg-toggle-grid{
@@ -165,6 +207,9 @@ p{
     display: none;
     font-size: 14px;
     line-height: 1.5;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.8s ease, transform 0.8 ease;
 }
 
 .afg-toggle-container .afg-toggle-a {
@@ -176,6 +221,7 @@ p{
 .afg-toggle-container.active .afg-toggle-a {
     display: block;
     opacity: 1;
+    transform: translateY(0);
 }
 
 .afg-toggle-container.active .afg-divider {
