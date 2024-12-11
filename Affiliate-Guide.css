@@ -92,8 +92,8 @@ p{
     height: 50px;
 }
 
-/*FAQ 2*/
-.afg-aq-grid{
+/*Fqa 2*/
+.afg-qa-grid{
     display: grid;
     width: 100%;
     max-width: 1200px;
@@ -103,7 +103,7 @@ p{
     padding: 10px;
 }
 
-.afg-aq-container{
+.afg-qa-container{
     border: 1px solid #ffffff;
     cursor: pointer;
     width: 100%;
@@ -113,35 +113,42 @@ p{
     border-bottom: 1px solid #7c7c7c;
 }  
 
-.afg-aq-q{
+.afg-qa-q{
     display: inline-block;
     line-height: 1.5;
     font-size: 18px;
     margin: 0px 40px 20px 0;
 }
 
-.afg-aq-a{
+.afg-qa-a{
     display: none;
     font-size: 14px;
     line-height: 1.5;
 }
 
-.afg-aq-container .afg-aq-a {
+.afg-qa-container .afg-qa-a {
     display: none;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
 
-.afg-aq-container.active .afg-aq-a {
+.afg-qa-container.active .afg-qa-a {
     display: block;
     opacity: 1;
 }
 
-.afg-aq-container {
-    cursor: pointer;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
+.afg-svg-container{
+    display:inline-block;
+}
+
+.afg-svg-container svg{
+    width: 16px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.afg-qa-container.active .afg-svg-container svg {
+    rotate: 180deg;
 }
 
 /*sign-up container*/
