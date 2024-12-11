@@ -6,20 +6,22 @@
     padding: 0;
 }
 
+
 h1{
     color: white;
-    font-size: 48px;
-    font-weight: 400; 
+    font-size: 60px;
+    font-weight: 600; 
 }
 
 h2{
     color: #7c7c7c;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 55px;
+    font-weight: 600;
 }
 
 p{
-    font-size: 15px;
+    font-size: 24px;
+    line-height: 38px;
 }
 
 .flex-c{
@@ -67,7 +69,6 @@ p{
 
 /*front banner*/
 .banner{
-    height: 500px;
     position: relative; 
     margin-bottom: 120px;
 }
@@ -90,21 +91,28 @@ p{
 
 /*ABOUT RINGKE AFFILIATE PROGRAM*/
 .afg-container{
-    width: 100%;
+    padding: 0px 100px;
     height: auto;
     margin-bottom: 120px;
 }
 
 .afg-title{
-    border: 2px solid #7c7c7c;;
-    border-radius: 15px;
     padding: 5px 12px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.afg-image{
+    position: relative; 
+}
+
+.afg-img img{
+    object-position: top 15px right 0px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .afg-description{
-    padding: 20px 30px;
-    text-align: center;
+    padding: 20px;
 }
 
 /*HOW IT WORKS*/
@@ -120,8 +128,8 @@ p{
     height: 50px;
 }
 
-/*Fqa 2*/
-.afg-qa-grid{
+/*Faq*/
+.afg-toggle-grid{
     display: grid;
     width: 100%;
     max-width: 1200px;
@@ -131,38 +139,43 @@ p{
     padding: 10px;
 }
 
-.afg-qa-container{
-    border: 1px solid #ffffff;
+
+.afg-FAQ{
+    border-bottom: 1px solid #7c7c7c;
+}
+
+.afg-toggle-container{
     cursor: pointer;
-    width: 100%;
     height: auto;
     transition: 0.4s;
-    padding: 10px 0 20px 10px;
-    border-bottom: 1px solid #7c7c7c;
 }  
 
-.afg-qa-q{
+.afg-toggle-q{
     display: inline-block;
     line-height: 1.5;
     font-size: 18px;
     margin: 0px 40px 20px 0;
 }
 
-.afg-qa-a{
+.afg-toggle-a{
     display: none;
     font-size: 14px;
     line-height: 1.5;
 }
 
-.afg-qa-container .afg-qa-a {
+.afg-toggle-container .afg-toggle-a {
     display: none;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
 
-.afg-qa-container.active .afg-qa-a {
+.afg-toggle-container.active .afg-toggle-a {
     display: block;
     opacity: 1;
+}
+
+.afg-toggle-container.active .afg-divider {
+    display: none;
 }
 
 .afg-svg-container{
@@ -170,12 +183,20 @@ p{
 }
 
 .afg-svg-container svg{
-    width: 16px;
-    height: auto;
     transition: 0.3s;
 }
 
-.afg-qa-container.active .afg-svg-container svg {
+.svg16{
+    width: 16px;
+    height: auto;
+}
+
+.svg20{
+    width: 20px;
+    height: auto;
+}
+
+.afg-toggle-container.active .afg-svg-container svg {
     rotate: 180deg;
 }
 

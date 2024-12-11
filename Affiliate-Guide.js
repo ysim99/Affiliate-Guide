@@ -1,6 +1,6 @@
 function toggleQA(element) {
     // Close all other active containers
-    const allContainers = document.querySelectorAll(".afg-qa2-container");
+    const allContainers = document.querySelectorAll(".afg-qa-container");
     allContainers.forEach((container) => {
         if (container !== element) {
             container.classList.remove("active");

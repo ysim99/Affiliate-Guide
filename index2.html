@@ -10,20 +10,50 @@
     <title>Affilate-Guide</title>
 </head>
 <body>
-    <div><a href="./"><button class="layout-change">Change Design</button></a></div>
+    <div class="fixed"><a href="./"><button class="layout-change">Change Design</button></a></div>
+
     <!-- Front banner -->
     <div class="banner flex-c">
         <img src="https://cdn.shopify.com/s/files/1/1352/5175/files/sebastian-pandelache-XnNnK-2mTag-unsplash.jpg?v=1733928218" alt="meeting stock img" width="100%" height="500px">
         <h1 class="banner-text">Ringke Affiliate Program</h1>
     </div>
 
-    <div class="afg-container flex-c">
-        <div class="afg-title"><h2>ABOUT RINGKE AFFILIATE PROGRAM</h2></div>
-        <div class="afg-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores laboriosam aperiam iure, eaque hic nisi magnam optio debitis voluptate impedit ut, cum id, quos quam blanditiis aspernatur aut quisquam reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis ipsum maxime? Molestias sequi perspiciatis voluptatum velit minus nulla ab corporis cum optio vel, debitis quis omnis ipsam sunt officia?</p></div>
+    <!-- About Ringke -->
+    <div class="afg-container afg-toggle-container" onclick="toggle(this)">
+        <div class="afg-toggle-q afg-about"><br/><h2>About Ringke</h2></div>                   
+        <div class="afg-svg-container"> 
+            <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.62497 3.25024L18.0023 16.4177L32.375 3.25024" stroke="#535353" stroke-width="5.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                     
+        </div>
+            <div class="afg-divider" style="border: 1px solid #7c7c7c;"></div>
+            <div class="afg-toggle-a">
+                <div class="afg-img"><img src="https://cdn.shopify.com/s/files/1/1352/5175/files/3000px.jpg?v=1733948625" width="80%" height="500px"></div>
+                <div class="afg-description"><p>&nbsp;Loved by over 60 million customers in over 70 countries, Ringke is an international mobile accessory brand
+                    that brings innovative style and extraordinary protection to smartphones
+                    and other devices.<br/><br/>
+                    
+                    &nbsp;Founded in 2003, Ringke showcases comfort and style through painstakingly formulated materials based on a meticulous design process.<br/><br/>                  
+                    
+                    
+                    &nbsp;Ringke aims to provide users with the best experience and strives to progressively develop
+                    a diverse range of products, each better than the last.</p>
+                </div>
+            </div>
     </div>
 
+    <!-- about ringke affiliate program -->
+    <div class="afg-container bg-gr">
+        <div class="afg-title"><h2>ABOUT RINGKE AFFILIATE PROGRAM</h2></div>
+        <div class="afg-description"><p>Join the Ringke Affiliate Program to generate revenue and grow with Ringke side-by-side.<br/>
+            Use Ringke's global renown and high-quality products to monetize incoming traffic and
+            views to your site effectively. Through the link generated from the Ringke Affiliate Program,
+            you can easily earn revenue for each purchase.<br/><br/>
+            
+            Ringke is dedicated to fully supporting your growth in both followers and revenue.</p></div>
+    </div>
 
-    <div class="afg-container flex-c">
+    <div class="afg-container">
         <div class="afg-title"><h2>HOW IT WORKS</h2></div>
         <div class= "flex-sa">
             <div class="afg-icon-container"><img src="https://cdn.shopify.com/s/files/1/1352/5175/files/free_domestic_shipping_ICON_9b0fae1d-2709-4388-856c-0b723c524410.png?v=1613700582" width="70vw" height="auto"><p class="afg-icon-title">ShareASale<br/>Registration</p></div>
@@ -35,44 +65,44 @@
         </div>
     </div>
 
-    <div class="afg-container flex-c">
+    <div class="afg-container">
         <div class="afg-title"><h2>Question</h2></div>
-        <div class="afg-qa-grid">
-            <div class="afg-qa-container" onclick="toggleQA(this)">
-                    <div class="afg-qa-q"><br/>What are the requirements to join the affiliate program?</div>                   
+        <div class="afg-toggle-grid">
+            <div class="afg-toggle-container afg-FAQ" onclick="toggle(this)">
+                    <div class="afg-toggle-q"><br/>What are the requirements to join the affiliate program?</div>                   
                     <div class="afg-svg-container"> 
-                        <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="svg16" width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.62497 3.25024L18.0023 16.4177L32.375 3.25024" stroke="#535353" stroke-width="5.75" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                     
                     </div>
-                        <div class="afg-qa-a">- Individuals or businesses with a certain level of online traffic (visitor count) can apply for the Rinke Affiliate Program. However, applications will only be approved after a review to ensure they meet the eligibility criteria, and activities can only begin once approval is granted.</div>
+                        <div class="afg-toggle-a">- Individuals or businesses with a certain level of online traffic (visitor count) can apply for the Rinke Affiliate Program. However, applications will only be approved after a review to ensure they meet the eligibility criteria, and activities can only begin once approval is granted.</div>
                 </div>
-            <div class="afg-qa-container" onclick="toggleQA(this)">
-                <div class="afg-qa-q"></span><br/>What is the duration of the contract?</div>
+            <div class="afg-toggle-container afg-FAQ" onclick="toggle(this)">
+                <div class="afg-toggle-q"></span><br/>What is the duration of the contract?</div>
                 <div class="afg-svg-container"> 
-                    <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg16" width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.62497 3.25024L18.0023 16.4177L32.375 3.25024" stroke="#535353" stroke-width="5.75" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>                     
                 </div>
-                    <div class="afg-qa-a">- The Ringke Affiliate Program does not have a fixed contract period. However, if there is no traffic or sales performance for a certain period, the program may be terminated without prior notice, so it is important to maintain consistent performance.</div>
+                    <div class="afg-toggle-a">- The Ringke Affiliate Program does not have a fixed contract period. However, if there is no traffic or sales performance for a certain period, the program may be terminated without prior notice, so it is important to maintain consistent performance.</div>
                 </div>
-            <div class="afg-qa-container" onclick="toggleQA(this)">
-                <div class="afg-qa-q"></span><br/>How is marketing material provided?</div>
+            <div class="afg-toggle-container afg-FAQ" onclick="toggle(this)">
+                <div class="afg-toggle-q"></span><br/>How is marketing material provided?</div>
                 <div class="afg-svg-container"> 
-                    <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg16" width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.62497 3.25024L18.0023 16.4177L32.375 3.25024" stroke="#535353" stroke-width="5.75" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>                     
                 </div>
-                    <div class="afg-qa-a">-Ringke provides various promotional materials to assist partners with their marketing activities.</div>
+                    <div class="afg-toggle-a">-Ringke provides various promotional materials to assist partners with their marketing activities.</div>
                 </div>
-            <div class="afg-qa-container" onclick="toggleQA(this)">
-                <div class="afg-qa-q"></span><br/>What is the commission structure?</div>
+            <div class="afg-toggle-container afg-FAQ" onclick="toggle(this)">
+                <div class="afg-toggle-q"></span><br/>What is the commission structure?</div>
                 <div class="afg-svg-container"> 
-                    <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg16" width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.62497 3.25024L18.0023 16.4177L32.375 3.25024" stroke="#535353" stroke-width="5.75" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>                     
                 </div>
-                    <div class="afg-qa-a">- The basic commission starts at 5%. Depending on performance and activity level, the commission rate may increase gradually.</div>
+                    <div class="afg-toggle-a">- The basic commission starts at 5%. Depending on performance and activity level, the commission rate may increase gradually.</div>
                 </div>
         </div>
     </div>
