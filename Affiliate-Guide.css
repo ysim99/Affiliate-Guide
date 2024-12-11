@@ -1,0 +1,167 @@
+
+/*general*/
+*{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: white;
+    font-size: 48px;
+    font-weight: 400; 
+}
+
+h2{
+    color: #7c7c7c;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+p{
+    font-size: 15px;
+}
+
+.flex-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-sa{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8vw;
+}
+
+/*front banner*/
+.banner{
+    height: 500px;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.banner img{
+    filter: brightness(0.6);
+    object-fit: cover;
+    object-position: top;
+}
+
+.banner-text{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); transform: translate(-50%, -50%);
+}
+
+
+/*affilate contents*/
+
+/*ABOUT RINGKE AFFILIATE PROGRAM*/
+.afg-container{
+    width: 100%;
+    height: auto;
+    margin-bottom: 120px;
+}
+
+.afg-title{
+    border: 2px solid #7c7c7c;;
+    border-radius: 15px;
+    padding: 5px 12px;
+    margin-bottom: 50px;
+}
+
+.afg-description{
+    padding: 20px 30px;
+    text-align: center;
+}
+
+/*HOW IT WORKS*/
+.afg-icon-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.afg-icon-title{
+    text-align: center;
+    height: 50px;
+}
+
+/*FAQ 2*/
+.afg-aq-grid{
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 10px;
+}
+
+.afg-aq-container{
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    transition: 0.4s;
+    padding: 10px 0 20px 10px;
+    border-bottom: 1px solid #7c7c7c;
+}  
+
+.afg-aq-q{
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 0px 40px 20px 0;
+}
+
+.afg-aq-a{
+    display: none;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.afg-aq-container .afg-aq-a {
+    display: none;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.afg-aq-container.active .afg-aq-a {
+    display: block;
+    opacity: 1;
+}
+
+.afg-aq-container {
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+/*sign-up container*/
+.sign-up-container{
+    background-image: url(https://cdn.shopify.com/s/files/1/1352/5175/files/banner_1_f42e2afb-010c-4046-890e-f46bf4f2e603.jpg?v=1700229044);
+    height: 500px;
+    background-size: cover;
+    gap: 80px;
+}
+
+.sign-up-btn{
+    font-size: 1.2em;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 30px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.sign-up-btn:hover{
+    color: white;
+    background-color: rgb(99, 202, 79);
+}
