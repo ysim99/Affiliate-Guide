@@ -48,6 +48,10 @@ p{
     z-index: 1;
 }
 
+.bg-gr{
+    background-color: #e6e6e6;
+}
+
 
 /*temp button*/
 .layout-change{
@@ -91,9 +95,9 @@ p{
 
 /*ABOUT RINGKE AFFILIATE PROGRAM*/
 .afg-container{
-    padding: 0px 100px;
+    padding: 60px 100px;
     height: auto;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 .afg-title{
@@ -106,12 +110,12 @@ p{
 }
 
 .afg-img img{
-    object-position: top 15px right 0px;
     object-fit: cover;
     border-radius: 12px;
 }
 
 .afg-description{
+    width: 80%;
     padding: 20px;
 }
 
