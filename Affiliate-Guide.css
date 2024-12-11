@@ -46,6 +46,8 @@ p{
     z-index: 1;
 }
 
+
+/*temp button*/
 .layout-change{
     color: white;
     background-color: #172c44;
@@ -59,6 +61,9 @@ p{
 .layout-change:hover{
     opacity: 0.7;
 }
+/*temp button---delete after confirmed*/
+
+
 
 /*front banner*/
 .banner{
