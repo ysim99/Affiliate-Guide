@@ -105,13 +105,14 @@ p{
     position: relative;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1.2s ease-out;
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .afg-container.visible {
     opacity: 1;
     transform: translateY(0);
-  }
+}
+
 
 .afg-title{
     padding: 5px 12px;
@@ -207,9 +208,6 @@ p{
     display: none;
     font-size: 14px;
     line-height: 1.5;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.8s ease, transform 0.8 ease;
 }
 
 .afg-toggle-container .afg-toggle-a {
@@ -221,7 +219,6 @@ p{
 .afg-toggle-container.active .afg-toggle-a {
     display: block;
     opacity: 1;
-    transform: translateY(0);
 }
 
 .afg-toggle-container.active .afg-divider {
