@@ -209,13 +209,12 @@ p{
     line-height: 1.5;
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
-    transition: opacity 0.4s ease, max-height 0.4s ease;
+    transition: 0.4s ease;
 }
 
 .afg-toggle-container.active .afg-toggle-a {
     opacity: 1;
-    max-height: fit-content;
+    max-height: 1000px;
 }
 
 .afg-toggle-container.active .afg-divider {
