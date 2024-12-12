@@ -27,22 +27,42 @@ function toggle(element) {
 
 
 
-let index = 0;
+let slideIndex = 0;
 
-function moveSlide(step) {
+function calculateSlideWidth() {
+    const slide = document.querySelector('.afg-slide'); 
+    const slideWidth = slide.offsetWidth;
+    const gap = parseInt(getComputedStyle(document.querySelector('.afg-carousel')).gap, 10);
+    return slideWidth + gap;
+}
+
+function showSlide(index) {
     const slides = document.querySelectorAll('.afg-slide');
     const totalSlides = slides.length;
-
-    index += step;
-
-    // Loop back to the first slide if at the end
-    if (index < 0) {
-        index = totalSlides - 3;
-    } else if (index >= totalSlides-2) {
-        index = 0;
+    
+    if (index >= totalSlides) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = totalSlides - 1; 
+    } else {
+        slideIndex = index;
     }
 
-    // Move the carousel to the new position
+  
+    const slideWidthWithGap = calculateSlideWidth(); 
+    const offset = -slideIndex * slideWidthWithGap; 
+
+
     const carousel = document.querySelector('.afg-carousel');
-    carousel.style.transform = `translateX(-${index * 18}%)`;
+    carousel.style.transform = `translateX(${offset}px)`;
 }
+
+function moveSlide(step) {
+    slideIndex += step;
+    showSlide(slideIndex);
+}
+
+
+showSlide(slideIndex);
+
+

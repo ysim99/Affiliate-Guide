@@ -23,6 +23,11 @@ h2{
     font-weight: 600;
 }
 
+h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+
 p{
     font-size: 24px;
     line-height: 38px;
@@ -119,8 +124,11 @@ p{
     margin-bottom: 20px;
 }
 
+.afg-img-mobile{
+    display: none;
+}
+
 .afg-img img{
-    object-fit: cover;
     border-radius: 12px;
 }
 
@@ -139,11 +147,31 @@ p{
 }
 
 .afg-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    line-height: 1.2;
     width: 445px;
     height: 400px;
     border-radius: 30px;
     transition: transform 0.5s ease-in-out;
     background-color: #f4f4f4;
+}
+
+.afg-icon{
+    margin-top: 15px;
+    padding: 5px 12px;
+}
+
+.afg-number{
+    background-color: #7c7c7c;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    margin: 0px 40px 10px 0px;
+    border-radius: 50%;
+    align-self: flex-end;
 }
 
 .afg-carousel-button{
@@ -264,3 +292,14 @@ p{
     background-color: rgb(99, 202, 79);
 }
 
+
+
+/*Mobile Device*/
+@media (max-width: 767px){
+    
+}
+
+/*Tablet Device*/
+@media (max-width: 767px){
+    
+}
