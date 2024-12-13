@@ -330,6 +330,8 @@ p{
     }
 
     .afg-container{
+        width: 100%;
+        overflow-x: hidden;
         padding: 0px;
     }
 
@@ -370,10 +372,6 @@ p{
         margin-bottom: 10px;
     }
 
-    .afg-carousel{
-        overflow-x: hidden;
-    }
-    
     .afg-carousel-button{
         display: none;
     }
