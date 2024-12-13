@@ -6,8 +6,12 @@
     padding: 0;
 }
 
-body{
+html, body{
     overflow-x: hidden;
+}
+
+body{
+    position: relative;
 }
 
 
@@ -331,7 +335,6 @@ p{
 
     .afg-container{
         width: 100%;
-        overflow-x: hidden;
         padding: 0px;
     }
 
