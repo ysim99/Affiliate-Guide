@@ -367,11 +367,20 @@ p{
         line-height: 1.5;
         font-size: 30px;
         font-weight: 500;
-        margin: 10px;
+        margin-bottom: 10px;
     }
 
     .afg-carousel-button{
         display: none;
+    }
+
+    .sign-up-container{
+        gap: 60px;
+        text-align: center ;
+    }
+
+    .sign-up-container h1{
+        font-size: 38px;;
     }
 }
 
