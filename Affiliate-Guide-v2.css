@@ -121,7 +121,6 @@ p{
 
 .afg-title{
     padding: 5px 12px;
-    margin-bottom: 20px;
 }
 
 .afg-img-mobile{
@@ -273,9 +272,15 @@ p{
 /*sign-up container*/
 .sign-up-container{
     background-image: url(https://cdn.shopify.com/s/files/1/1352/5175/files/banner_1_f42e2afb-010c-4046-890e-f46bf4f2e603.jpg?v=1700229044);
-    height: 500px;
+    height: 60vh;
     background-size: cover;
-    gap: 80px;
+    gap: 120px;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 120px;
+    border-radius: 60px;
 }
 
 .sign-up-btn{
@@ -294,12 +299,76 @@ p{
 
 
 
-/*Mobile Device*/
-@media (max-width: 767px){
+
+/* Mobile Device */
+@media (max-width: 767px) {
+
+    h1{
+        color: white;
+        font-size: 48px;
+        font-weight: 600; 
+    }
+
+    h2{
+        color: black;
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
     
+    .banner{
+        margin-bottom: 60px;
+    }
+
+    .afg-container{
+        padding: 0px;
+    }
+
+    .afg-about, .afg-title{
+        padding-left: 12px;
+    }
+
+    .afg-img{
+        display: none;
+    }
+
+    .afg-img-mobile{
+        display: block;
+    }
+
+    .afg-toggle-grid {
+        gap: 20px;
+    }
+
+    .afg-slide{
+        width: 320px;
+        height: 300px;
+    }
+
+    .afg-number{
+        width: 40px;
+        height: 40px;
+    }
+
+    .afg-number h1{
+        font-size: 24px;
+    }
+
+    .afg-carousel-button{
+        
+    }
 }
 
-/*Tablet Device*/
-@media (max-width: 767px){
-    
+/* Tablet Device */
+@media (max-width: 1024px) {
+
 }
