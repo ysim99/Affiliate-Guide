@@ -301,7 +301,7 @@ p{
 
 
 /* Mobile Device */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
 
     h1{
         color: white;
@@ -363,12 +363,15 @@ p{
         font-size: 24px;
     }
 
+    .afg-toggle-q{
+        line-height: 1.5;
+        font-size: 30px;
+        font-weight: 500;
+        margin: 10px;
+    }
+
     .afg-carousel-button{
-        
+        display: none;
     }
 }
 
-/* Tablet Device */
-@media (max-width: 1024px) {
-
-}

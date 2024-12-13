@@ -28,9 +28,11 @@ function toggle(element) {
 
 
 let slideIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
 
 function calculateSlideWidth() {
-    const slide = document.querySelector('.afg-slide');
+    const slide = document.querySelector('.afg-slide'); 
     const slideWidth = slide.offsetWidth;
     const gap = parseInt(getComputedStyle(document.querySelector('.afg-carousel')).gap, 10);
     return slideWidth + gap;
@@ -43,13 +45,13 @@ function showSlide(index) {
     if (index >= totalSlides) {
         slideIndex = 0;
     } else if (index < 0) {
-        slideIndex = totalSlides - 1;
+        slideIndex = totalSlides - 1; 
     } else {
         slideIndex = index;
     }
 
-    const slideWidthWithGap = calculateSlideWidth();
-    const offset = -slideIndex * slideWidthWithGap;
+    const slideWidthWithGap = calculateSlideWidth(); 
+    const offset = -slideIndex * slideWidthWithGap; 
 
     const carousel = document.querySelector('.afg-carousel');
     carousel.style.transform = `translateX(${offset}px)`;
@@ -60,33 +62,29 @@ function moveSlide(step) {
     showSlide(slideIndex);
 }
 
-// Initialize the carousel by showing the first slide
-showSlide(slideIndex);
-
-// Mobile swipe functionality
-let startTouch = 0;
-let endTouch = 0;
-
 function handleTouchStart(event) {
-    startTouch = event.touches[0].clientX; // Get the starting X position
+    touchStartX = event.touches[0].clientX; // Capture the initial touch position
 }
 
-function handleTouchEnd(event) {
-    endTouch = event.changedTouches[0].clientX; // Get the ending X position
+function handleTouchMove(event) {
+    touchEndX = event.touches[0].clientX; // Capture the current touch position
+}
 
-    if (startTouch > endTouch + 50) {
-        moveSlide(1); // Swipe left (next slide)
-    } else if (startTouch < endTouch - 50) {
-        moveSlide(-1); // Swipe right (previous slide)
+function handleTouchEnd() {
+    if (touchStartX > touchEndX + 50) {
+        // Swipe left (next slide)
+        moveSlide(1);
+    } else if (touchStartX < touchEndX - 50) {
+        // Swipe right (previous slide)
+        moveSlide(-1);
     }
 }
 
-// Check if it's a mobile device
-if (window.innerWidth <= 767) {
-    const carouselContainer = document.querySelector('.afg-carousel');
-    carouselContainer.addEventListener('touchstart', handleTouchStart);
-    carouselContainer.addEventListener('touchend', handleTouchEnd);
-}
+document.querySelector('.afg-carousel').addEventListener('touchstart', handleTouchStart);
+document.querySelector('.afg-carousel').addEventListener('touchmove', handleTouchMove);
+document.querySelector('.afg-carousel').addEventListener('touchend', handleTouchEnd);
 
+// Show the initial slide
+showSlide(slideIndex);
 
 
