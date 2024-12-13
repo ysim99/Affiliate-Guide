@@ -375,10 +375,6 @@ p{
         margin-bottom: 10px;
     }
 
-    .afg-carousel-button{
-        display: none;
-    }
-
     .sign-up-container{
         gap: 60px;
         text-align: center ;
@@ -386,6 +382,11 @@ p{
 
     .sign-up-container h1{
         font-size: 38px;;
+    }
+
+    .afg-toggle-a p{
+        padding-left: 20px;
+        width: 80%;
     }
 }
 
